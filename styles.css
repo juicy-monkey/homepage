@@ -1,0 +1,32 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite; /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Adjust height as needed */
+}
+
+.links {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.links a {
+    /* filter: brightness(0) saturate(100%) invert(66%) sepia(78%) saturate(339%) hue-rotate(345deg) brightness(91%) contrast(89%); */
+    filter: brightness(0) saturate(100%) invert(57%) sepia(65%) saturate(284%) hue-rotate(345deg) brightness(97%) contrast(90%);
+    margin-left: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+}
