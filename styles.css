@@ -1,8 +1,8 @@
-/* styles.css */
+
 body {
     margin: 0;
     padding: 0;
-    background-color: antiquewhite; /* Background color */
+    background-color: antiquewhite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh; /* Adjust height as needed */
+    max-width: 90%;
+    height: auto;
 }
 
 .links {
@@ -24,9 +25,25 @@ body {
 }
 
 .links a {
-    /* filter: brightness(0) saturate(100%) invert(66%) sepia(78%) saturate(339%) hue-rotate(345deg) brightness(91%) contrast(89%); */
     filter: brightness(0) saturate(100%) invert(57%) sepia(65%) saturate(284%) hue-rotate(345deg) brightness(97%) contrast(90%);
     margin-left: 10px;
     padding: 5px 10px;
     display: inline-block;
+}
+
+
+@media (max-width: 600px) {
+    .container img {
+        max-width: 80%;
+    }
+
+    .links {
+        width: 100%;
+        right: 0;
+        bottom: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
