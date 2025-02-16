@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 90%;
+    flex-direction: column;
     height: auto;
 }
 
@@ -26,24 +26,22 @@ body {
 
 .links a {
     filter: brightness(0) saturate(100%) invert(57%) sepia(65%) saturate(284%) hue-rotate(345deg) brightness(97%) contrast(90%);
-    margin-left: 10px;
-    padding: 5px 10px;
-    display: inline-block;
+    margin: 15px;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 600px), (max-height: 600px) {
+    body {
+        max-height: 85vh;
+    }
+
     .container img {
         max-width: 80%;
     }
 
     .links {
-        width: 100%;
-        right: 0;
-        bottom: 10vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: static;
+        margin-top: 20px;
     }
 
 }
