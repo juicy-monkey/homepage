@@ -27,6 +27,7 @@ body {
 .links a {
     filter: brightness(0) saturate(100%) invert(57%) sepia(65%) saturate(284%) hue-rotate(345deg) brightness(97%) contrast(90%);
     margin: 15px;
+    display: inline-block;
 }
 
 
@@ -35,7 +36,7 @@ body {
         max-height: 85vh;
     }
 
-    .container img {
+     .container > img {
         max-width: 80%;
     }
 
